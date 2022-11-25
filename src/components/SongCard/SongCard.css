@@ -1,0 +1,36 @@
+.song{
+    display: flex;
+    flex-direction: column;
+    width:110px;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.song-img{
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 1;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: transform .5s ease;
+}
+
+.song-img:hover {
+    transform: scale(1.05);
+}
+.song-title{
+    width:100%;
+    height: 1.2rem;
+    font-size: medium;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    text-align: center;
+}
+
+.song-fav{
+    text-align: right;
+    cursor: pointer;
+}

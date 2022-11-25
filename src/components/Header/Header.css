@@ -1,0 +1,31 @@
+.nav{
+    background-color: #ffb5a7;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height :15vh;
+    min-height: 100px;
+}
+
+.nav-image{
+    height: 100%;
+    aspect-ratio: 1;
+}
+
+.nav-title{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    justify-content: center;
+    text-align: right;
+}
+
+.nav-title-main{
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.nav-title-sub{
+    font-size: larger;
+    font-weight: 700;
+}

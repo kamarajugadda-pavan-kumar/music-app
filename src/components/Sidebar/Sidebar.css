@@ -1,0 +1,21 @@
+.sidebar{
+    width: 20vw;
+    min-width: 200px;
+    height: 100vh;
+    background-color: #5650d9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.sidebar-span{
+    padding: 1rem;
+}
+
+.sidebar-a{
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+    font-weight: 300;
+}

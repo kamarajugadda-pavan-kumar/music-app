@@ -14,7 +14,7 @@ function App() {
       localStorage.setItem("fav", JSON.stringify([]));
     }
     if (!localStorage.getItem("playlists")) {
-      localStorage.setItem("playlists", JSON.stringify([]));
+      localStorage.setItem("playlists", JSON.stringify({}));
     }
     if (!localStorage.getItem("fav_ids")) {
       localStorage.setItem("fav_ids", JSON.stringify([]));

@@ -19,6 +19,7 @@ export default function Favourites(props) {
               songData={song}
               imgUrl={song.images.coverart}
               songName={song.title}
+              key={song.key}
             ></SongCard>
           );
         })}

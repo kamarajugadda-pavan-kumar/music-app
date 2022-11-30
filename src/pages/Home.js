@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import SongCard from "../components/SongCard/SongCard";
+import checkImageLinks from "../functions/checkImageLinks";
 import "./Body.css";
 
 const getSongs = async (setSongs) => {
@@ -17,7 +18,7 @@ const getSongs = async (setSongs) => {
   axios
     .request(options)
     .then(function (response) {
-      setSongs(response.data.tracks);
+      setSongs(checkImageLinks(response.data.tracks));
       console.log(response.data.tracks);
     })
     .catch(function (error) {
@@ -43,6 +44,7 @@ export default function Home(props) {
                   songData={song}
                   imgUrl={song.images.coverart}
                   songName={song.title}
+                  key={song.key}
                 ></SongCard>
               );
             })

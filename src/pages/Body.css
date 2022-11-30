@@ -100,6 +100,7 @@
 }
 
 .playlist-single{
+    margin-top: 1rem;
     font-weight: bold;
     font-size: medium;
     border: 1px solid teal;

@@ -7,10 +7,34 @@
     justify-content: space-around;
 }
 
-
-.song-img{
+.song-img-container{
     width: 100px;
     height: 100px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.song-img-container:after {
+    content: '\A';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.song-img-container:hover::after{
+    opacity: 1;
+}
+
+.song-img{
+    width: 100%;
+    height: 100%;
     aspect-ratio: 1;
     border-radius: 5px;
     margin-bottom: 5px;
@@ -33,4 +57,33 @@
 .song-fav{
     text-align: right;
     cursor: pointer;
+    position: absolute;
+    padding: 5px;
+    left:0px;
+    bottom:5px;
+    z-index: 1;
+} 
+
+.heart-fill{
+    color: aqua;
+
+}
+
+.heart-empty{
+    color: aqua;
+
+}
+
+.song-add-to-playlist{
+    color: aqua;
+    position: absolute;
+    cursor: pointer;
+    padding: 5px;
+    right: 0px;
+    bottom: 5px;
+    z-index: 1;
+}
+
+.three-dot-add-to-playlist-menu{
+    position: relative;
 }

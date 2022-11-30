@@ -1,0 +1,46 @@
+.popup-container{
+    position: absolute;
+    right: -180px;
+    top:70px;
+    width: 175px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    z-index:3;
+    -webkit-box-shadow: -1px 1px 12px 1px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: -1px 1px 12px 1px rgba(0, 0, 0, 0.33);
+    box-shadow: -1px 1px 12px 1px rgba(0, 0, 0, 0.33);
+    border-radius: 5px;
+    
+}
+
+.popup-playlist{
+    border-bottom: 1px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+}
+
+.popup-add-new-playlist{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.popup-ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.popup-li{
+    text-align: left;
+    margin-right: auto;
+    font-weight: 700;
+}
+
+.popup-li:hover{
+    color: blue;
+    cursor: pointer;
+}
